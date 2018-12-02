@@ -1,24 +1,95 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# table
 
-Things you may want to cover:
+## candidates table
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|belonging|string|null: false|
+|slogan|text|null: false|
+|image|text|null: false|
+|email|text|null: false||slogan|text|null: false|
+|tel|text|null: false|
+|password|text|null: false|
 
-* Ruby version
+### Association
+- has_many :manifests
+- has_many :issues
+- has_many :slogans
+- has_many :careers
+- has_many :results
+- has_one :focus
 
-* System dependencies
 
-* Configuration
+## manifests table
+|Column|Type|Options|
+|------|----|-------|
+|onesentense|string|null: false|
+|title|text|null: false|
+|content|text|null: false|
+|candidate_id|references|foreign_key:true|
 
-* Database creation
+### Association
+- belongs_to :candidate
 
-* Database initialization
+## issues table
+|Column|Type|Options|
+|------|----|-------|
+|onesentense|string|null: false|
+|title|text|null: false|
+|content|text|null: false|
+|candidate_id|references|foreign_key:true|
 
-* How to run the test suite
+### Association
+- belongs_to :candidate
 
-* Services (job queues, cache servers, search engines, etc.)
+## slogans table
+|Column|Type|Options|
+|------|----|-------|
+|onesentense|string|null: false|
+|title|text|null: false|
+|content|text|null: false|
+|candidate_id|references|foreign_key:true|
 
-* Deployment instructions
+### Association
+- belongs_to :candidate
 
-* ...
+## careers table
+|Column|Type|Options|
+|------|----|-------|
+|onesentense|string|null: false|
+|year|text|null: false|
+|career|text|null: false|
+|candidate_id|references|foreign_key:true|
+
+### Association
+- belongs_to :candidate
+
+## results table
+|Column|Type|Options|
+|------|----|-------|
+|year|string|null: false|
+|janre|text|null: false|
+|result|text|null: false|
+|candidate_id|references|foreign_key:true|
+
+### Association
+- belongs_to :candidate
+
+## focuses table
+|Column|Type|Options|
+|------|----|-------|
+|social-seculity|string||
+|industrial|text||
+|capital|text||
+|life-educate|string||
+|agri-foresty|text||
+|financial|text||
+|work|string||
+|environment-energy|text||
+|parliament-revo|text||
+|disaster-prevention|text||
+|candidate_id|references|foreign_key:true|
+
+### Association
+- belongs_to :candidate
