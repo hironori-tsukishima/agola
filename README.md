@@ -8,7 +8,7 @@
 |belonging|string|null: false|
 |slogan|text|null: false|
 |image|text|null: false|
-|email|text|null: false||slogan|text|null: false|
+|email|text|null: false|
 |tel|text|null: false|
 |password|text|null: false|
 
@@ -19,6 +19,14 @@
 - has_many :careers
 - has_many :results
 - has_one :focus
+- has_one :area
+
+## areas table
+|Column|Type|Options|
+|------|----|-------|
+|area|string|null: false|
+|candidate_id|references|foreign_key:true|
+
 
 
 ## manifests table

@@ -1,0 +1,47 @@
+= render "layouts/city(toppage)/header_top"
+= render "layouts/city(toppage)/header_bottom"
+.icatchShinjuku
+  = image_tag("shinjuku.jpg" , class: "icatchImage")
+  %p.textShinjuku#topShinjuku voting at shinjuku is held
+  %p.textShinjuku#bottomShinjuku at 2018 / 11 / 11
+.point
+  = image_tag("point.jpeg" , class: "pointImage")
+  %p.pointTitle#title
+    Point of election
+  %p.pointText#text
+    区長選というローカルな選挙では、その区に住んでいる住民の方々の民意が非常に重要になります。
+    %br
+    区民の皆様としては、第一に安心安全、第二にズルをしないか、第三に暮らしが豊かになるか、という事を求めているでしょう。
+    %br
+    実際に新宿では、幼稚園や保育園といった施設や、子育ての整備が未だに整っていないですし、老朽化した建造物やインフラも多いです。
+    %br
+    区の持続可能な財政にも注目が集まります。リーマンショックの損失を新宿はまだ完全に埋められていません。
+    %br
+    また一番大事なのは、人柄かもしれません。信頼に足る行動や精神性を持つ候補者を見定めるのは大事な事です。
+    %br
+    民意に答えてくれそうな候補は誰なのでしょうか？
+    %br
+    民意というのは、あなたの気持ちです。
+    %br
+    %br
+    自分が思っている不満や、問題点に答えようとしている候補者を見つけてください。
+    %br
+    あなたの一票が住みよい新宿を創るのですから。
+.candidates
+  .candidatesTitle#cTitle
+    Candidates
+    .candidatesCircles
+      .circle1
+        .personimage
+          = image_tag("abe.jpeg")
+        .belonging 自民党
+        .name 安倍晋三
+        .slogan この国を豊かに
+        .like いいね❤️：33
+      .circle2
+        .personimage
+          = image_tag("hato.jpeg")
+        .belonging 民主党
+        .name 安倍晋三
+        .slogan 政治家がバカでは国もたぬ
+        .like いいね❤️：6
