@@ -1,3 +1,96 @@
-// Place all the styles related to the suginami controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.icatchSuginami{
+position: relative;
+  .icatchImage{
+    width:100vw;
+    vertical-align: bottom;
+  }
+  .textSuginami{
+  color: #FF7043;
+  font-weight: bold;
+  font-size: 4em;
+  font-family :Quicksand, sans-serif;
+  }
+  #topSuginami{
+    position: absolute;
+    top: 10%;
+    left: 8%;
+  }
+  #bottomSuginami{
+    position: absolute;
+    top: 25%;
+    left: 16%;
+  }
+}
+
+
+.point{
+position: relative;
+  .pointImage{
+    width:100vw;
+    vertical-align: bottom;
+  }
+  #SuginamiTitle{
+    color: #FF7043;
+    font-weight: bold;
+    font-size: 3em;
+    font-family :Quicksand, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    position: absolute;
+    top: 0%;
+    left: 37%;
+  }
+
+  #SuginamiText{
+    padding-top: 50px;
+    color: #424242;
+    font-weight: bold;
+    font-size: 20px;
+    font-family :Quicksand, sans-serif;
+    text-align: center;
+    line-height: 2em;
+    position: absolute;
+    top: 25%;
+    left: 13%;
+  }
+}
+
+
+.candidates{
+  #cTitle{
+    color: #FF7043;
+    font-weight: bold;
+    font-size: 3em;
+    font-family :Quicksand, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+  }
+}
+
+.candidatesCircles{
+  display: flex;
+  justify-content: space-around;
+  padding-top:60px;
+  .circle1{
+    color: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #424242;
+  }
+  .circle2{}
+    color: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #424242;
+}
+
+
+
+  .person1Circle:hover {
+  color: #fff;
+  background-color: #D84315;
+  }
+  .person2Circle:hover {
+  color: #fff;
+  background-color: #D84315;
+  }
