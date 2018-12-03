@@ -1,0 +1,255 @@
+// ヘッダー一つ目のCSS
+
+.headerTop{
+  display: flex;
+  justify-content: space-between;
+  height:50px;
+  vertical-align:middle;
+  line-height: 50px;
+  .title{
+    padding-left: 30px;
+  }
+  .var{
+    display: flex;
+    font-size: 16px;
+    padding-top: 10px;
+    .about{
+      color:red;
+      padding-right:30px;
+      letter-spacing: 3px;
+    }
+    .city{
+      padding-right:30px;
+      letter-spacing: 10px;
+    }
+      .en{
+        font-size:12px;
+        color:#B0BEC5;
+        letter-spacing:1px;
+      }
+      #about{
+        position: absolute; top :30px;
+        padding-left:16px;
+      }
+      #shinjuku{
+        position: absolute; top :30px;
+        padding-left:6px;
+      }
+      #shinagawa{
+        position: absolute; top :30px;
+      }
+      #suginami{
+        position: absolute; top :30px;
+        padding-left:3px;
+      }
+  }
+}
+
+
+// ヘッダー二つ目のCSS
+.headerBottom{
+  display: flex;
+  justify-content: flex-end;
+  height:80px;
+  vertical-align:middle;
+  line-height: 80px;
+  margin-top: 30px;
+  background-color: #212121;
+  color:white;
+  .text{
+    padding-right: 40px;
+  }
+  .icon{
+    color:white;
+    padding-right: 10px;
+  }
+}
+
+  .icon:hover {
+  color: #4FC3F7;
+  }
+
+  #contact:hover {
+  color: #FF7043;
+  }
+
+
+// トップページ1枚目のCSS
+.icatch{
+position: relative;
+  .icatchImage{
+    width:100vw;
+    vertical-align: bottom;
+  }
+  .text{
+  color: #FF7043;
+  font-weight: bold;
+  font-size: 4em;
+  font-family :Quicksand, sans-serif;
+  }
+  #top{
+    position: absolute;
+    top: 40%;
+    left: 28%;
+  }
+  #bottom{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+  }
+}
+
+
+
+// トップページ２枚目のCSS
+.aboutUs{
+position: relative;
+  .aboutImage{
+    width:100vw;
+    vertical-align: bottom;
+  }
+  #title{
+    color: #FF7043;
+    font-weight: bold;
+    font-size: 3em;
+    font-family :Quicksand, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    position: absolute;
+    top: 0%;
+    left: 42%;
+  }
+
+  #text{
+    padding-top: 50px;
+    color: #E0E0E0;
+    font-weight: bold;
+    font-size: 20px;
+    font-family :Quicksand, sans-serif;
+    text-align: center;
+    line-height: 2em;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+  }
+}
+
+// トップページ３枚目のCSS
+.vote{
+position: relative;
+  .voteImage{
+    width:100vw;
+  }
+  .voteTitle{
+    color: #FF7043;
+    font-weight: bold;
+    font-size: 3em;
+    font-family :Quicksand, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    position: absolute;
+    top: 0%;
+    left: 37%;
+  }
+
+  .voteText{
+    padding-top: 50px;
+    color: #E0E0E0;
+    font-weight: bold;
+    font-size: 20px;
+    font-family :Quicksand, sans-serif;
+    text-align: center;
+    line-height: 2em;
+    position: absolute;
+    top: 25%;
+    left: 19%;
+  }
+}
+
+// トップページ３枚目の丸（円）CSS
+
+.citycircles{
+  display: flex;
+  justify-content: flex-between;
+  .shinjukuCircle{
+    width: 150px;/*幅*/
+    height: 150px;/*高さ*/
+    border-radius: 50%;/*角丸*/
+    background-color: #EEEEEE;
+    position: absolute;
+    top: 70%;
+    left: 18%;
+    color: #D84315;
+    border:solid 3px #D84315;
+    .shinjukuText{
+      text-align:center;
+      font-size: 20px;
+      vertical-align:middle;
+      line-height: 130px;
+      position:relative;
+      .en#shinjuku{
+        position:absolute;top:25px;left:34px;
+
+      }
+    }
+  }
+  .shinagawaCircle{
+    width: 150px;/*幅*/
+    height: 150px;/*高さ*/
+    border-radius: 50%;/*角丸*/
+    background-color: #EEEEEE;
+    position: absolute;
+    top: 70%;
+    left: 44%;
+    border:solid 3px #D84315;
+    color: #D84315;
+    .shinagawaText{
+      text-align:center;
+      font-size: 20px;
+      vertical-align:middle;
+      line-height: 130px;
+      position:relative;
+      .en#shinagawa{
+        position:absolute;top:25px;left:24px;
+      }
+    }
+  }
+  .suginamiCircle{
+    width: 150px;/*幅*/
+    height: 150px;/*高さ*/
+    border-radius: 50%;/*角丸*/
+    background-color:#EEEEEE ;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    border:solid 3px #D84315;
+    color: #D84315;
+    .suginamiText{
+      text-align:center;
+      font-size: 20px;
+      vertical-align:middle;
+      line-height: 130px;
+      position:relative;
+      .en#suginami{
+        position:absolute;top:25px;left:32px;
+      }
+    }
+  }
+  .shinjukuCircle:hover {
+  color: #fff;
+  background-color: #D84315;
+  }
+  .shinagawaCircle:hover {
+  color: #fff;
+  background-color: #D84315;
+  }
+  .suginamiCircle:hover {
+  color: #fff;
+  background-color: #D84315;
+  }
+}
+
+
+
+
+
