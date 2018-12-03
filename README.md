@@ -19,6 +19,16 @@
 - has_many :careers
 - has_many :results
 - has_one :focus
+- has_one :area
+
+## areas table
+|Column|Type|Options|
+|------|----|-------|
+|area|string|null: false|
+|candidate_id|references|forign_key:true|
+
+### Association
+- belongs_to :candidate
 
 
 ## manifests table
