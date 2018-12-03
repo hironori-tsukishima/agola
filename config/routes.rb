@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'city#index'
   resources :shinjuku ,only: :index
   resources :shinagawa ,only: :index
+  resources :suginami ,only: :index
 end

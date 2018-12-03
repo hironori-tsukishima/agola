@@ -1,0 +1,45 @@
+= render "layouts/city(toppage)/header_top"
+= render "layouts/city(toppage)/header_bottom"
+.icatchSuginami
+  = image_tag("suginami.jpg" , class: "icatchImage")
+  %p.textSuginami#topSuginami voting at Suginami is held
+  %p.textSuginami#bottomSuginami at 2018 / 06 / 29
+.point
+  = image_tag("point.jpeg" , class: "pointImage")
+  %p.pointTitle#SuginamiTitle
+    Point of election
+  %p.pointText#SuginamiText
+    区長選というローカルな選挙では、その区に住んでいる住民の方々の民意が非常に重要になります。
+    %br
+    今回の杉並区長選挙での争点は下記が挙げられています。
+    %br
+    区有施設再編計画や学童クラブの統合、防災対策、待機児童対策。
+    %br
+    住宅地として、都内随一の安心感を保持する杉並区ならではの、区民の生活の中身に焦点を当てた内容となっている。
+    %br
+    民意に答えてくれそうな候補は誰なのでしょうか？
+    %br
+    民意というのは、あなたの気持ちです。
+    %br
+    %br
+    自分が思っている不満や、問題点に答えようとしている候補者を見つけてください。
+    %br
+    あなたの一票が住みよい新宿を創るのですから。
+.candidates
+  .candidatesTitle#cTitle
+    Candidates
+    .candidatesCircles
+      .circle1
+        .personimage
+          = image_tag("abe.jpeg")
+        .belonging 自民党
+        .name 安倍晋三
+        .slogan この国を豊かに
+        .like いいね❤️：33
+      .circle2
+        .personimage
+          = image_tag("hato.jpeg")
+        .belonging 民主党
+        .name 安倍晋三
+        .slogan 政治家がバカでは国もたぬ
+        .like いいね❤️：6
