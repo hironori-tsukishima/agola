@@ -1,0 +1,54 @@
+= render "layouts/city(toppage)/header_top"
+= render "layouts/city(toppage)/header_bottom"
+.icatch
+  = image_tag("vote.jpg" , class: "icatchImage")
+  %p.text#top voting is more fun!
+  %p.text#bottom for easier understanding
+.aboutUs
+  = image_tag("ground.png" , class: "aboutImage")
+  %p.aboutTitle#title
+    about us
+  %p.aboutText#text
+    古代ギリシャでは、全員が政治に参加し、国の運営を全員で決めていました。
+    人々は広場(agola)に集まり、議会を開いたのです。
+    %br
+    近代では間接民主制が広まり、政治や選挙に関心を持たなくなった人が続出しました。
+    %br
+    無理もありません。選挙や政治はわかりづらいですし、だからこそつまらないのですから。
+    %br
+    %br
+    Agolaは選挙をより楽しくするオープンプラットフォームです。
+    %br
+    Agolaでは選挙や候補者の情報をわかりやすいフォーマットにまとめ、みなさまにお届けします。
+    %br
+    Agolaに来れば、選挙の争点や背景、候補者の得意領域やマニフェスト、人柄などがすぐに理解できます。
+    %br
+    さあ、今こそAgolaに集まり、自らの手で国の未来を決めましょう。
+.vote
+  = image_tag("city.jpeg" , class: "voteImage")
+  .voteTitle#title
+    area of Voting
+  %p.voteText#text
+    Agolaは現在ローカルテスト中です。
+    %br
+    東京都内、2018年に開催される下記3箇所の区長選挙について、Agolaをお楽しみいただけます。
+    %br
+    %br
+    区長選挙では主に、区長のマニフェストと人柄が重視されます。
+    %br
+    よりよい東京と住みよい地区を作っていく為に、楽しみながら今回の選挙を理解しましょう！
+    .citycircles
+      .shinjukuCircle
+        .shinjukuText
+          新宿
+          .en#shinjuku shinjuku
+      .shinagawaCircle
+        .shinagawaText
+          品川
+          .en#shinagawa shinagawa
+      .suginamiCircle
+        .suginamiText
+          杉並
+          .en#suginami suginami
+
+
