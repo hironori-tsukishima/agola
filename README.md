@@ -8,7 +8,7 @@
 |belonging|string|null: false|
 |slogan|text|null: false|
 |image|text|null: false|
-|email|text|null: false||slogan|text|null: false|
+|email|text|null: false|
 |tel|text|null: false|
 |password|text|null: false|
 
