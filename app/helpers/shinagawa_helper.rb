@@ -1,0 +1,2 @@
+module ShinagawaHelper
+end

@@ -1,0 +1,46 @@
+= render "layouts/city(toppage)/header_top"
+= render "layouts/city(toppage)/header_bottom"
+.icatchShinagawa
+  = image_tag("shinagawa.png" , class: "icatchImage")
+  %p.textShinagawa#topShinagawa voting at Shinagawa is held
+  %p.textShinagawa#bottomShinagawa at 2018 / 10 / 01
+.point
+  = image_tag("point.jpeg" , class: "pointImage")
+  %p.pointTitle#shinagawaTitle
+    Point of election
+  %p.pointText#shinagawaText
+    区長選というローカルな選挙では、その区に住んでいる住民の方々の民意が非常に重要になります。
+    %br
+    %br
+    今回の品川区長選挙の最大の争点は、羽田新ルートです。
+    %br
+    品川上空には約300メートル付近に飛行機が行き交うことになります。区民には当然、騒音や危険の心配があります。
+    %br
+    その他にも、給食費の無償化や病院の解説など、多種多様なマニフェストが挙げられています。
+    %br
+    民意に答えてくれそうな候補は誰なのでしょうか？
+    %br
+    民意というのは、あなたの気持ちです。
+    %br
+    %br
+    自分が思っている不満や、問題点に答えようとしている候補者を見つけてください。
+    %br
+    あなたの一票が住みよい品川を創るのですから。
+.candidates
+  .candidatesTitle#cTitle
+    Candidates
+    .candidatesCircles
+      .circle1
+        .personimage
+          = image_tag("abe.jpeg")
+        .belonging 自民党
+        .name 安倍晋三
+        .slogan この国を豊かに
+        .like いいね❤️：33
+      .circle2
+        .personimage
+          = image_tag("hato.jpeg")
+        .belonging 民主党
+        .name 安倍晋三
+        .slogan 政治家がバカでは国もたぬ
+        .like いいね❤️：6
