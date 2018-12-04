@@ -3,7 +3,7 @@
   position: relative;
   .signContent{
     width:80vw;
-    height:80vh;
+    height:85vh;
     background-color: white;
     position: absolute;
     top: 0;
@@ -84,6 +84,7 @@
   color:white;
   float: right;
   margin-right: 30px;
+  margin-top: 10px;
 }
 
 
@@ -106,3 +107,37 @@
   color:#0093FA;
   position: relative;top:55px;
 }
+
+
+// editの空白
+.editfield{
+  padding-left:40px;
+  padding-top: 30px;
+  width:25vw;
+  font-size: 13px;
+  color:#9E9E9E;
+}
+
+
+// Edit時のcancel account
+.editcancel{
+  padding-left:40px;
+  padding-top: 50px;
+  width:25vw;
+  font-size: 13px;
+  color:#9E9E9E;
+}
+.cancel{
+  margin-left:38px;
+  margin-top: 5px;
+  font-size: 13px;
+  color:#9E9E9E;
+}
+
+.back{
+  margin-left:40px;
+  position:relative; top:10px;
+  font-size: 13px;
+  color:#0093FA;
+}
+
