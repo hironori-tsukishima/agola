@@ -1,5 +1,6 @@
 $(function(){
-  $(".icon").on("click", function(){
-    console.log("できてるー！")
+  $('.about').on('click', function(){
+    console.log("hai")
+    $('html, body').animate({scrollTop:900});
   })
 });
