@@ -8,7 +8,7 @@
     .signRightContent
       .signLeftContentImage
       %h2.hello Hello!
-      %p.greeting Thank you for your log in. please fiil in the blanks for using Agola.
+      %p.greeting Thank you for your log in. please fill in the blanks for using Agola.
       = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
         .field#signName
           = f.label :email
