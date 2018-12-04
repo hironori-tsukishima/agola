@@ -1,17 +1,28 @@
-%h2 Log in
-= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .field
-    = f.label :password
-    %br/
-    = f.password_field :password, autocomplete: "current-password"
-  - if devise_mapping.rememberable?
-    .field
-      = f.check_box :remember_me
-      = f.label :remember_me
-  .actions
-    = f.submit "Log in"
-= render "devise/shared/links"
+.wrapper#main
+  = image_tag("sign.jpg" , class: "icatchImage")
+  .signContent
+    .signLeftContent
+      .signLeftContnetTitleTop Revolution
+      .signLeftContnetTitleBottom in Voting
+      .signLeftContnetText You can get more understandable information of Voting
+    .signRightContent
+      .signLeftContentImage
+      %h2.hello Hello!
+      %p.greeting Thank you for your log in. please fiil in the blanks for using Agola.
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .field#signName
+          = f.label :email
+          %br/
+          = f.email_field :email, autofocus: true, autocomplete: "email", class: "field"
+        .field
+          = f.label :password
+          %br/
+          = f.password_field :password, autocomplete: "current-password", class: "field"
+        - if devise_mapping.rememberable?
+          .field
+            = f.check_box :remember_me
+            = f.label :remember_me
+        = render "devise/shared/links"
+        .actions
+          = f.submit "log in",class: "submit"
+
