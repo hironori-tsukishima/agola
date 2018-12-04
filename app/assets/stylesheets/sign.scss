@@ -13,6 +13,8 @@
     margin: auto;
     display:flex;
     box-shadow: 0 0 20px gray;
+
+// signの際の左側のフォーム
     .signLeftContent{
       background-color: #0E244D;
       width:40vw;
@@ -37,6 +39,8 @@
         color:#3A82CA;
       }
     }
+
+// 右側のcontentに対するcss
     .signRightContent{
       width:40vw;
       .hello{
@@ -54,9 +58,14 @@
     }
   }
 }
+
+// signの際の右側のフォーム要素へのcss
+
+
 #signName{
   padding-top: 30px;
 }
+
 
 .field{
           padding-left:40px;
@@ -75,12 +84,25 @@
   color:white;
   float: right;
   margin-right: 30px;
-  margin-top:10px;
 }
 
 
-.login{
+// shredリンクの色・位置調整
+
+.login {
   padding-left: 40px;
   color:#0093FA;
-  position: relative;top:50px;
+  position: relative;top:20px;
+}
+
+.signup {
+  padding-left: 40px;
+  color:#0093FA;
+  position: relative;top:55px;
+}
+
+.forget {
+  padding-left: 40px;
+  color:#0093FA;
+  position: relative;top:55px;
 }
