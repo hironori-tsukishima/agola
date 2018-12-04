@@ -13,6 +13,7 @@
     display: flex;
     font-size: 16px;
     padding-top: 10px;
+    text-shadow: 0.2px 0.2px 0.2px #999999;
     .about{
       color:red;
       padding-right:30px;
@@ -56,6 +57,8 @@
   margin-top: 30px;
   background-color: #212121;
   color:white;
+
+
   .text{
     padding-right: 40px;
   }
@@ -91,6 +94,7 @@ position: relative;
   font-weight: bold;
   font-size: 4em;
   font-family :Quicksand, sans-serif;
+  text-shadow: 3px 3px 1px #424242;
   }
   #top{
     position: absolute;
@@ -123,6 +127,7 @@ position: relative;
     position: absolute;
     top: 0%;
     left: 42%;
+    text-shadow: 3px 3px 1px #424242;
   }
 
   #text{
@@ -136,8 +141,11 @@ position: relative;
     position: absolute;
     top: 25%;
     left: 10%;
+    text-shadow: 2px 2px 1px #424242;
   }
 }
+
+
 
 // トップページ３枚目のCSS
 .vote{
@@ -155,6 +163,7 @@ position: relative;
     position: absolute;
     top: 0%;
     left: 37%;
+    text-shadow: 3px 3px 1px #424242;
   }
 
   .voteText{
@@ -168,6 +177,7 @@ position: relative;
     position: absolute;
     top: 25%;
     left: 19%;
+    text-shadow: 2px 2px 1px #424242;
   }
 }
 
@@ -176,6 +186,7 @@ position: relative;
 .citycircles{
   display: flex;
   justify-content: flex-between;
+  text-shadow: 1px 1px 1px #999999;
   .shinjukuCircle{
     width: 150px;/*幅*/
     height: 150px;/*高さ*/
@@ -186,6 +197,7 @@ position: relative;
     left: 18%;
     color: #D84315;
     border:solid 3px #D84315;
+    box-shadow: 0 0 8px #EEEEEE;
     .shinjukuText{
       text-align:center;
       font-size: 20px;
@@ -208,6 +220,7 @@ position: relative;
     left: 44%;
     border:solid 3px #D84315;
     color: #D84315;
+    box-shadow: 0 0 8px #EEEEEE;
     .shinagawaText{
       text-align:center;
       font-size: 20px;
@@ -229,6 +242,7 @@ position: relative;
     left: 70%;
     border:solid 3px #D84315;
     color: #D84315;
+    box-shadow: 0 0 8px #EEEEEE;
     .suginamiText{
       text-align:center;
       font-size: 20px;
