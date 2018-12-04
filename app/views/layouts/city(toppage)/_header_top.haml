@@ -1,16 +1,20 @@
 .headerTop
   .title
-    = image_tag("title.png" , class: "title")
+    = link_to root_path do
+      = image_tag("title.png" , class: "title")
   .var
     .about
       Agolaとは
       .en#about about us
     .city
-      新宿区
-      .en#shinjuku shinjuku
+      %label 新宿区
+      =link_to shinjuku_index_path do
+        .en#shinjuku shinjuku
     .city
-      品川区
-      .en#shinagawa shinagawa
+      %label 品川区
+      =link_to shinagawa_index_path do
+        .en#shinagawa shinagawa
     .city
-      杉並区
-      .en#suginami suginami
+      %label 杉並区
+      =link_to suginami_index_path do
+        .en#suginami suginami

@@ -9,15 +9,16 @@ position: relative;
   font-weight: bold;
   font-size: 4em;
   font-family :Quicksand, sans-serif;
+  text-shadow: 3px 3px 1px #999999;
   }
   #topShinagawa{
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 8%;
   }
   #bottomShinagawa{
     position: absolute;
-    top: 45%;
+    top: 25%;
     left: 18%;
   }
 }
@@ -39,6 +40,7 @@ position: relative;
     position: absolute;
     top: 0%;
     left: 37%;
+    text-shadow: 3px 3px 1px #999999;
   }
 
   #shinagawaText{
@@ -52,8 +54,10 @@ position: relative;
     position: absolute;
     top: 25%;
     left: 13%;
+    text-shadow: 1px 1px 1px #999999;
   }
 }
+
 
 
 .candidates{
@@ -64,6 +68,7 @@ position: relative;
     font-family :Quicksand, sans-serif;
     text-align: center;
     padding-top: 100px;
+    text-shadow: 1px 1px 1px #999999;
   }
 }
 

@@ -9,6 +9,7 @@ position: relative;
   font-weight: bold;
   font-size: 4em;
   font-family :Quicksand, sans-serif;
+  text-shadow: 3px 3px 1px #999999;
   }
   #topShinjuku{
     position: absolute;
@@ -39,6 +40,7 @@ position: relative;
     position: absolute;
     top: 0%;
     left: 37%;
+    text-shadow: 3px 3px 1px #999999;
   }
 
   .pointText{
@@ -52,6 +54,7 @@ position: relative;
     position: absolute;
     top: 25%;
     left: 7%;
+    text-shadow: 1px 1px 1px #999999;
   }
 }
 
@@ -64,6 +67,7 @@ position: relative;
     font-family :Quicksand, sans-serif;
     text-align: center;
     padding-top: 100px;
+    text-shadow: 1px 1px 1px #999999;
   }
 }
 
