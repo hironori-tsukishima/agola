@@ -3,18 +3,35 @@
     = link_to root_path do
       = image_tag("title.png" , class: "title")
   .var
-    .about
-      Agolaとは
-      .en#about about us
-    .city
-      %label 新宿区
-      =link_to shinjuku_index_path do
-        .en#shinjuku shinjuku
-    .city
-      %label 品川区
-      =link_to shinagawa_index_path do
-        .en#shinagawa shinagawa
-    .city
-      %label 杉並区
-      =link_to suginami_index_path do
-        .en#suginami suginami
+    - if controller_name == "city"
+      .about
+        Agolaとは
+        %p.en#about about us
+      .city
+        %label 新宿区
+        =link_to shinjuku_index_path do
+          %p.en#shinjuku shinjuku
+      .city
+        %label 品川区
+        =link_to shinagawa_index_path do
+          %p.en#shinagawa shinagawa
+      .city
+        %label 杉並区
+        =link_to suginami_index_path do
+          %p.en#suginami suginami
+    - else
+      .about
+        選挙の争点
+        %p.en#about issue
+      .city
+        %label 新宿区
+        =link_to shinjuku_index_path do
+          %p.en#shinjuku shinjuku
+      .city
+        %label 品川区
+        =link_to shinagawa_index_path do
+          %p.en#shinagawa shinagawa
+      .city
+        %label 杉並区
+        =link_to suginami_index_path do
+          %p.en#suginami suginami
