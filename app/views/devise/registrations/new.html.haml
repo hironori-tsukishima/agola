@@ -1,21 +1,47 @@
-%h2 Sign up
-= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-  = devise_error_messages!
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .field
-    = f.label :password
-    - if @minimum_password_length
-      %em
-        (#{@minimum_password_length} characters minimum)
-    %br/
-    = f.password_field :password, autocomplete: "new-password"
-  .field
-    = f.label :password_confirmation
-    %br/
-    = f.password_field :password_confirmation, autocomplete: "new-password"
-  .actions
-    = f.submit "Sign up"
-= render "devise/shared/links"
+.wrapper#main
+  = image_tag("sign.jpg" , class: "icatchImage")
+  .signContent
+    .signLeftContent
+      .signLeftContnetTitleTop Revolution
+      .signLeftContnetTitleBottom in Voting
+      .signLeftContnetText You can get more understandable information of Voting
+      = render "devise/shared/links"
+    .signRightContent
+      .signLeftContentImage
+      %h2.hello Hello!
+      %p.greeting Thank you for your sign up. please fiil in the blanks for using Agola.
+      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        = devise_error_messages!
+        .field#signName
+          = f.label :name
+          %br/
+          = f.text_field :name, autofocus: true, class: "field"
+        .field
+          = f.label :belonging
+          %br/
+          = f.text_field :belonging, class: "field"
+        .field
+          = f.label :slogan
+          %br/
+          = f.text_field :slogan, class: "field"
+        .field
+          = f.label :image
+          %br/
+          = f.file_field :image, class: "field"
+        .field
+          = f.label :email
+          %br/
+          = f.email_field :email, autocomplete: "email", class: "field"
+        .field
+          = f.label :password
+          - if @minimum_password_length
+            %em
+              (#{@minimum_password_length} characters minimum)
+          %br/
+          = f.password_field :password, autocomplete: "new-password", class: "field"
+        .field
+          = f.label :password_confirmation
+          %br/
+          = f.password_field :password_confirmation, autocomplete: "new-password", class: "field"
+        .actions
+          = f.submit "Sign up" ,class: "submit"
