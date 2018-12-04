@@ -5,7 +5,6 @@
       .signLeftContnetTitleTop Revolution
       .signLeftContnetTitleBottom in Voting
       .signLeftContnetText You can get more understandable information of Voting
-      = render "devise/shared/links"
     .signRightContent
       .signLeftContentImage
       %h2.hello Hello!
@@ -43,5 +42,6 @@
           = f.label :password_confirmation
           %br/
           = f.password_field :password_confirmation, autocomplete: "new-password", class: "field"
+        = render "devise/shared/links"
         .actions
           = f.submit "Sign up" ,class: "submit"
