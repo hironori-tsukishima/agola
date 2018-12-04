@@ -43,6 +43,7 @@
 // 右側のcontentに対するcss
     .signRightContent{
       width:40vw;
+      overflow: scroll;
       .hello{
         font-size:30px;
         font-weight: bold;
