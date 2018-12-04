@@ -8,4 +8,10 @@
     = link_to do
       = fa_icon 'twitter lg' , class: "icon"
   .text /
-  .text#contact CONTACT
+  .text#contact
+    = link_to "CONTACT", destroy_candidate_session_path,id: "headerText", method: :delete
+  - if candidate_signed_in?
+    = link_to "MY PAGE", destroy_candidate_session_path ,class: "text" ,id: "headerText", method: :delete
+    = link_to "SIGN OUT", destroy_candidate_session_path,class: "text",id: "headerText", method: :delete
+  - else
+    = link_to "SIGN IN",new_candidate_session_path,id: "headerText",class: "text"
