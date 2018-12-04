@@ -1,5 +1,5 @@
 $(function(){
-  $(".icon").on("hover", function(){
+  $(".icon").on("click", function(){
     console.log("できてるー！")
   })
 });
