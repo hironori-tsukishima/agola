@@ -1,6 +1,7 @@
 
 #main{
   position: relative;
+  font-family: 'Hiragino Maru Gothic ProN';
   .signContent{
     width:80vw;
     height:85vh;
@@ -24,12 +25,14 @@
         color:white;
         padding-top: 40px;
         padding-left:40px;
+        letter-spacing:3px ;
       }
       .signLeftContnetTitleBottom{
         font-size: 4em;
         font-weight: bold;
         padding-left:40px;
         color:white;
+        letter-spacing:3px ;
       }
       .signLeftContnetText{
         font-size: 13px;
@@ -140,5 +143,76 @@
   position:relative; top:10px;
   font-size: 13px;
   color:#0093FA;
+}
+
+// パスワード変更の際のsubmit
+.passSubmit{
+ height:50px;
+  padding: 0px 15px;
+  background-color: #0087F1;
+  vertical-align:middle;
+  line-height: 40px;
+  color:white;
+  margin-left: 40px;
+  margin-top: 90px;
+}
+
+// パスワード変更時の文字のscss
+.greeting{
+  padding-top: 20px;
+}
+
+.en{
+  height:10px;
+  width:10px;
+  box-shadow: 0 0 5px #eeeeee;
+  // visibility:hidden;
+}
+#en1{
+  border-radius: 50%;
+  background-color: #eeeeee;
+  position: absolute;top:80%;left:15%;
+}
+#en2{
+  border-radius: 50%;
+  height:13px;
+  width:13px;
+  background-color: #60D27F;
+  position: absolute;top:75%;left:19.8%;
+}
+#en3{
+  height:15px;
+  width:15px;
+  border-radius: 50%;
+  background-color: #21FFFE;
+  position: absolute;top:70%;left:25%;
+}
+
+#en4{
+  border-radius: 50%;
+  background-color: #21FFFE;
+  position: absolute;top:75%;left:30%;
+}
+#en5{
+  border-radius: 50%;
+  height:13px;
+  width:13px;
+  background-color: #60D27F;
+  position: absolute;top:70%;left:35%;
+}
+#en6{
+  border-radius: 50%;
+  height:15px;
+  width:15px;
+  background-color: #eeeeee;
+  position: absolute;top:65%;left:40%;
+}
+
+#en7{
+  height:18px;
+  width:18px;
+  border-radius: 50%;
+  background-color:#60D27F ;
+  position: absolute;top:60%;left:45%;
 }
 
