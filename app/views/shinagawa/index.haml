@@ -29,31 +29,36 @@
 .candidates
   .candidatesTitle#cTitle
     Candidates
-    .candidatesBox
+  .candidatesBox
+    - @candidates.each do |candidate|
       .Box
         .leftBox
           .personimage
-          = image_tag("abe.jpeg")
+            / = image_tag candidate.image.url
         .rightBox
-          .belonging#eachEle 所属：自民党
-          .name#eachEle 名前：安倍晋三
-          .slogan#eachEle この国を豊かににすることこそ、私の使命であります
-          .like#eachEle いいね❤️：33
-      .Box
-        .leftBox
-          .personimage
-          = image_tag("abe.jpeg")
-        .rightBox
-          .belonging#eachEle 自民党
-          .name#eachEle 安倍晋三
-          .slogan#eachEle この国を豊かに
-          .like#eachEle いいね❤️：33
-      .Box
-        .leftBox
-          .personimage
-          = image_tag("abe.jpeg")
-        .rightBox
-          .belonging 自民党
-          .name 安倍晋三
-          .slogan この国を豊かに
-          .like いいね❤️：33
+          .belonging#eachEle
+            = "所属：#{candidate.belonging}"
+          .name#eachEle
+            = "名前：#{candidate.name}"
+          .slogan#eachEle
+            = candidate.slogan
+
+          / .like#eachEle いいね❤️：33
+      / .Box
+      /   .leftBox
+      /     .personimage
+      /     = image_tag("abe.jpeg")
+      /   .rightBox
+      /     .belonging#eachEle 自民党
+      /     .name#eachEle 安倍晋三
+      /     .slogan#eachEle この国を豊かに
+      /     .like#eachEle いいね❤️：33
+      / .Box
+      /   .leftBox
+      /     .personimage
+      /     = image_tag("abe.jpeg")
+      /   .rightBox
+      /     .belonging 自民党
+      /     .name 安倍晋三
+      /     .slogan この国を豊かに
+      /     .like いいね❤️：33
