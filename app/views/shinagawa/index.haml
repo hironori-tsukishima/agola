@@ -29,18 +29,17 @@
 .candidates
   .candidatesTitle#cTitle
     Candidates
-    .candidatesCircles
-      .circle1
-        .personimage
-          = image_tag("abe.jpeg")
-        .belonging 自民党
-        .name 安倍晋三
-        .slogan この国を豊かに
-        .like いいね❤️：33
-      .circle2
-        .personimage
-          = image_tag("hato.jpeg")
-        .belonging 民主党
-        .name 安倍晋三
-        .slogan 政治家がバカでは国もたぬ
-        .like いいね❤️：6
+  .candidatesBox
+    - @candidates.each do |candidate|
+      - if candidate.area == "品川"
+        .Box
+          .leftBox
+            .personimage
+              = image_tag candidate.picture.url
+          .rightBox
+            .belonging#eachEle
+              = "所属：#{candidate.belonging}"
+            .name#eachEle
+              = "名前：#{candidate.name}"
+            .slogan#eachEle
+              = candidate.slogan

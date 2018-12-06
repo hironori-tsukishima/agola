@@ -20,13 +20,26 @@
           %br/
           = f.text_field :belonging, class: "field"
         .field
+          = f.label :area
+          %br/
+        %label.field
+          = f.radio_button :area, "新宿"
+          新宿
+        %label.field
+          = f.radio_button :area, "品川"
+          品川
+        %label.field
+          = f.radio_button :area, "杉並"
+          杉並
+
+        .field
           = f.label :slogan
           %br/
           = f.text_field :slogan, class: "field"
         .field
-          = f.label :image
+          = f.label :picture
           %br/
-          = f.file_field :image, class: "field"
+          = f.file_field :picture, class: "field"
         .field
           = f.label :email
           %br/

@@ -6,5 +6,6 @@ class Candidate < ApplicationRecord
   validates :name, presence: true
   validates :belonging, presence: true
   validates :slogan, presence: true
-  validates :image, presence: true
+  validates :picture, presence: true
+  mount_uploader :picture, PictureUploader
 end
