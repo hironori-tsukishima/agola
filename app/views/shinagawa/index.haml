@@ -31,14 +31,15 @@
     Candidates
   .candidatesBox
     - @candidates.each do |candidate|
-      .Box
-        .leftBox
-          .personimage
-            = image_tag candidate.picture.url
-        .rightBox
-          .belonging#eachEle
-            = "所属：#{candidate.belonging}"
-          .name#eachEle
-            = "名前：#{candidate.name}"
-          .slogan#eachEle
-            = candidate.slogan
+      - if candidate.area == "品川"
+        .Box
+          .leftBox
+            .personimage
+              = image_tag candidate.picture.url
+          .rightBox
+            .belonging#eachEle
+              = "所属：#{candidate.belonging}"
+            .name#eachEle
+              = "名前：#{candidate.name}"
+            .slogan#eachEle
+              = candidate.slogan
