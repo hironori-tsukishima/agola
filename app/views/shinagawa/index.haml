@@ -34,7 +34,7 @@
       .Box
         .leftBox
           .personimage
-            / = image_tag candidate.image.url
+            = image_tag candidate.picture.url
         .rightBox
           .belonging#eachEle
             = "所属：#{candidate.belonging}"
@@ -42,23 +42,3 @@
             = "名前：#{candidate.name}"
           .slogan#eachEle
             = candidate.slogan
-
-          / .like#eachEle いいね❤️：33
-      / .Box
-      /   .leftBox
-      /     .personimage
-      /     = image_tag("abe.jpeg")
-      /   .rightBox
-      /     .belonging#eachEle 自民党
-      /     .name#eachEle 安倍晋三
-      /     .slogan#eachEle この国を豊かに
-      /     .like#eachEle いいね❤️：33
-      / .Box
-      /   .leftBox
-      /     .personimage
-      /     = image_tag("abe.jpeg")
-      /   .rightBox
-      /     .belonging 自民党
-      /     .name 安倍晋三
-      /     .slogan この国を豊かに
-      /     .like いいね❤️：33
