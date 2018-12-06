@@ -16,14 +16,15 @@
     text-shadow: 0.2px 0.2px 0.2px #999999;
     .about{
       color:red;
-      padding-right:40px;
+      padding-right:30px;
       letter-spacing: 3px;
       position:relative;
     }
     .city{
-      padding-right:40px;
+      padding-right:30px;
       letter-spacing: 10px;
       position:relative;
+      color:black;
     }
       .en{
         font-size:12px;
@@ -31,8 +32,6 @@
         letter-spacing:1px;
         position:absolute;
         top:20px;
-        left: 0;
-        right: 0;
         margin:  auto;
       }
   }
