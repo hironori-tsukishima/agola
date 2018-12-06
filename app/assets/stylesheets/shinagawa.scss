@@ -60,7 +60,7 @@ position: relative;
 
 
 
-.candidates{
+
   #cTitle{
     color: #FF7043;
     font-weight: bold;
@@ -68,34 +68,38 @@ position: relative;
     font-family :Quicksand, sans-serif;
     text-align: center;
     padding-top: 100px;
-    text-shadow: 1px 1px 1px #999999;
+    // text-shadow: 1px 1px 1px #eeeeee;
   }
-}
 
-.candidatesCircles{
+
+.candidatesBox{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding-top:60px;
-  .circle1{
+  .Box{
     color: none;
     font-weight: bold;
     font-size: 20px;
     color: #424242;
+    width:40vw;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    box-shadow: 2px 2px 4px #424242;
+    .leftBox{
+      .personimage{
+        box-shadow: 2px 2px 4px #424242;
+      }
+    }
+    .rightBox{
+      #eachEle{
+        padding:10px 10px;
+      }
+    }
   }
-  .circle2{}
-    color: none;
-    font-weight: bold;
-    font-size: 20px;
-    color: #424242;
 }
 
 
 
-  .person1Circle:hover {
-  color: #fff;
-  background-color: #D84315;
-  }
-  .person2Circle:hover {
-  color: #fff;
-  background-color: #D84315;
-  }

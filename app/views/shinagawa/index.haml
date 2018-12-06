@@ -29,18 +29,31 @@
 .candidates
   .candidatesTitle#cTitle
     Candidates
-    .candidatesCircles
-      .circle1
-        .personimage
+    .candidatesBox
+      .Box
+        .leftBox
+          .personimage
           = image_tag("abe.jpeg")
-        .belonging 自民党
-        .name 安倍晋三
-        .slogan この国を豊かに
-        .like いいね❤️：33
-      .circle2
-        .personimage
-          = image_tag("hato.jpeg")
-        .belonging 民主党
-        .name 安倍晋三
-        .slogan 政治家がバカでは国もたぬ
-        .like いいね❤️：6
+        .rightBox
+          .belonging#eachEle 所属：自民党
+          .name#eachEle 名前：安倍晋三
+          .slogan#eachEle この国を豊かににすることこそ、私の使命であります
+          .like#eachEle いいね❤️：33
+      .Box
+        .leftBox
+          .personimage
+          = image_tag("abe.jpeg")
+        .rightBox
+          .belonging#eachEle 自民党
+          .name#eachEle 安倍晋三
+          .slogan#eachEle この国を豊かに
+          .like#eachEle いいね❤️：33
+      .Box
+        .leftBox
+          .personimage
+          = image_tag("abe.jpeg")
+        .rightBox
+          .belonging 自民党
+          .name 安倍晋三
+          .slogan この国を豊かに
+          .like いいね❤️：33
